@@ -21,7 +21,9 @@
 {Make a list of websites that you found helpful in this project}
 
 - [TypeScript Tutorial - freeCodeCamp.org](https://www.youtube.com/watch?v=30LWjhZzg50)
-- [Web Site Name](http://url.link.goes.here)
+- [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+- [How to Use Fetch in TypeScript](https://stackoverflow.com/questions/41103360/how-to-use-fetch-in-typescript)
+- [Recipes API](https://api-ninjas.com/api/recipe)
 
 # Future Work
 
