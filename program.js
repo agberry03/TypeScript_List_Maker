@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var readline = require("readline"); // Read lines from user input.
+var axios_1 = require("axios");
 // Recipe class
 var Recipe = /** @class */ (function () {
     function Recipe(title, ingredients, servings, instructions) {
@@ -39,17 +40,29 @@ var Recipe = /** @class */ (function () {
     });
     return Recipe;
 }());
-// fetch(`https://api-ninjas.com/api/recipe`)
-// .then(res => res.json())
-// .then((res: Recipe) => {
-// });
-var recipe = new Recipe("Placeholder title", "placeholder ingredients", "placeholder servings", "placeholder instructions");
-console.log("".concat(recipe.getTitle).concat(recipe.getIngredients).concat(recipe.getServings).concat(recipe.getInstructions));
+// const recipe = new Recipe("Placeholder title", "placeholder ingredients", "placeholder servings", "placeholder instructions")
+// console.log(`${recipe.getTitle}${recipe.getIngredients}${recipe.getServings}${recipe.getInstructions}`)
+// The user input and output.
 var rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-rl.question('What is your name? ', function (name) {
-    console.log("Hi ".concat(name, "!"));
+// Code from stackoverflow by Rodney P. Barbati
+// fetch(`https://api-ninjas.com/api/recipe`)
+// .then(res => res.json())
+// .then((res: Recipe) => {
+// });
+rl.question('What is the recipe you are looking for? ', function (query) {
+    console.log("Results for ".concat(query, ":\n"));
+    axios_1.default.get('https://api.api-ninjas.com/v1/recipe', {
+        params: { query: query },
+        headers: { 'X-Api-Key': 'title' },
+    })
+        .then(function (response) {
+        console.log(response.data);
+    })
+        .catch(function (error) {
+        console.error('Error:', error.response.data);
+    });
     rl.close();
 });
