@@ -13,10 +13,9 @@ var List = /** @class */ (function () {
                 break;
             }
         }
-        console.log("List item not found.\n");
     };
     List.prototype.displayList = function () {
-        console.log("".concat(this.name, "\n"));
+        console.log("".concat(this.name, ":\n"));
         for (var i in this.items) {
             process.stdout.write("".concat(parseInt(i) + 1, ". ").concat(this.items[i].name, " "));
             if (this.items[i].checked) {
