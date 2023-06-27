@@ -22,8 +22,7 @@
 
 - [TypeScript Tutorial - freeCodeCamp.org](https://www.youtube.com/watch?v=30LWjhZzg50)
 - [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
-- [How to Use Fetch in TypeScript](https://stackoverflow.com/questions/41103360/how-to-use-fetch-in-typescript)
-- [Recipes API](https://api-ninjas.com/api/recipe)
+- [Console.log Without a Newline(used answer by Paul Exchange)](https://stackoverflow.com/questions/9627646/chrome-javascript-developer-console-is-it-possible-to-call-console-log-withou#answer-38317398)
 
 # Future Work
 
