@@ -23,6 +23,7 @@
 - [TypeScript Tutorial - freeCodeCamp.org](https://www.youtube.com/watch?v=30LWjhZzg50)
 - [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 - [Console.log Without a Newline(used answer by Paul Exchange)](https://stackoverflow.com/questions/9627646/chrome-javascript-developer-console-is-it-possible-to-call-console-log-withou#answer-38317398)
+- [prompt-sync in TypeScript](https://www.youtube.com/watch?v=CvkOuA7eCgE&t=7s)
 
 # Future Work
 
