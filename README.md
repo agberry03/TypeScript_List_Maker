@@ -1,24 +1,20 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+I created a list maker program in TypeScript. It allows the user too create lists that can be populated
+with items that the user can then check off. The user can also display these lists to the terminal.
 
-{Provide a description of the software that you wrote to demonstrate the TypeScript language.}
-
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
+I created this software to become more familiar with the TypeScript language and how to use it to
+compile usable JavaScript code.
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+I used the Visual Studio Code IDE.
 
-{Describe the programming language that you used and any libraries.}
+I used the TypeScript language, and I used the prompt-sync library for user input.
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
 
 - [TypeScript Tutorial - freeCodeCamp.org](https://www.youtube.com/watch?v=30LWjhZzg50)
 - [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
@@ -27,8 +23,6 @@
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Make it so the lists can be saved and loaded to and from files.
+- Create a function to clear completed items from a list.
+- Make it so list items can be lists of sub items to complete.

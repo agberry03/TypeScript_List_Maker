@@ -38,14 +38,18 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var promptSync = require("prompt-sync");
 var prompt = promptSync();
+// The List class.
 var List = /** @class */ (function () {
+    // List constructor.
     function List(name) {
         this.name = name;
         this.items = [];
     }
+    // Add a new item to the list.
     List.prototype.addItem = function (itemName) {
         this.items.push(new Item(itemName));
     };
+    // Check off an item in the list.
     List.prototype.checkItem = function (itemName) {
         for (var i in this.items) {
             if (this.items[i].name.toLowerCase() == itemName.toLowerCase()) {
@@ -54,6 +58,7 @@ var List = /** @class */ (function () {
             }
         }
     };
+    // Display all items in the list.
     List.prototype.displayList = function () {
         console.log("\n".concat(this.name, ":\n"));
         for (var i in this.items) {
@@ -68,11 +73,14 @@ var List = /** @class */ (function () {
     };
     return List;
 }());
+// Item class.
 var Item = /** @class */ (function () {
+    // Item constructor.
     function Item(name) {
         this.name = name;
         this.checked = false;
     }
+    // Set checked to true for this item.
     Item.prototype.checkOff = function () {
         this.checked = true;
     };
@@ -98,9 +106,15 @@ function main() {
                 case 0:
                     lists = new Array;
                     choice = -1;
+                    // Welcome message.
+                    console.log("Welcome to the list maker!\n");
+                    // Explanation of program.
+                    console.log("Create lists, and then add and check off items from those lists.");
                     _b.label = 1;
                 case 1:
                     if (!(choice != 0)) return [3 /*break*/, 13];
+                    // Prompt message for a choice.
+                    console.log("Choose one of the following:\n");
                     // Display a list of user options.
                     console.log("0. Exit the program");
                     console.log("1. Create a new list");
