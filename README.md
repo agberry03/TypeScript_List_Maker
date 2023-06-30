@@ -6,7 +6,7 @@ with items that the user can then check off. The user can also display these lis
 I created this software to become more familiar with the TypeScript language and how to use it to
 compile usable JavaScript code.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Demonstration Video](https://www.youtube.com/watch?v=UFcYZM2evZc)
 
 # Development Environment
 
